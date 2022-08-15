@@ -6,8 +6,6 @@
 
 [mermaidjs](https://github.com/knsv/mermaid) renderer for [markdown-it](https://github.com/markdown-it/markdown-it).
 
-Example code
-
 An example mermaid diagram:
 ~~~
 ``` mermaid 
