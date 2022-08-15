@@ -8,9 +8,17 @@
 
 Example code
 
-~~~
 An example mermaid diagram:
 ~~~
+``` mermaid 
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+~~~
+produces 
 ``` mermaid 
 graph TD;
     A-->B;
