@@ -4,4 +4,4 @@
 node_modules/
 www/dist/
 www/index.html
-docs/_build/
+build/
