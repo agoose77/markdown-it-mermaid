@@ -1,0 +1,13 @@
+name: markdown-it-mermaid
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - docutils >=0.18
+  - myst-nb
+  - nodejs >=16,<17
+  - pydata-sphinx-theme >=0.10.0,<0.11
+  - sphinx >=5
+  - python >=3.10,<3.11
