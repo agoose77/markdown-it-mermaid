@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2015", "dom"],
-    "declaration": true,
-    "outDir": "./lib",
-    "strict": true,
-    "moduleResolution": "node",
+    "composite": true,
+    "incremental": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "declaration": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2015"
   },
   "include": [
     "src"

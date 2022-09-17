@@ -52,7 +52,7 @@ export default function mermaid(md: MarkdownIt, options: any) {
                 imageHTML = html;
             }, element);
         } catch (e) {
-            return `<div class="alert alert-danger">${e.toString()}</div>`;
+            return `<div class="alert alert-danger">${e}</div>`;
         } finally {
             element.remove();
         }
