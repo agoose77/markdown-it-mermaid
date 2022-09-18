@@ -4,6 +4,7 @@
   "description": "Support svgbob and mermaid text-based diagrams in Markdown-It.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -27,7 +28,6 @@
   "bugs": {
     "url": "https://github.com/agoose77/markdown-it-mermaid/issues"
   },
-  "typings": "lib/index.d.ts",
   "homepage": "https://github.com/agoose77/markdown-it-mermaid#readme",
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
