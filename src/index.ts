@@ -70,10 +70,7 @@ export default function mermaid(md: MarkdownIt, options: any) {
     }
 
     // Store encoded image data
-    imageAttrs.push([
-      "src",
-      `data:image/svg+xml,${encodeURIComponent(imageHTML)}`,
-    ]);
+    imageAttrs.push(["src", `data:image/svg+xml,${encodeURIComponent(imageHTML)}`]);
     return `<img ${slf.renderAttrs({ attrs: imageAttrs })}>`;
   }
 
