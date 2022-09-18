@@ -33,8 +33,9 @@ extensions = [
     # first-party sphinx extensions
     "sphinx.ext.todo",
     "sphinx.ext.autosectionlabel",
-    # mostly markdown
+    # mostly for markdown
     "myst_nb",
+    "sphinx_copybutton",
 ]
 
 autosectionlabel_prefix_document = True

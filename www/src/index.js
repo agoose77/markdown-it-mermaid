@@ -34,11 +34,21 @@ var source = CodeMirror.fromTextArea(
 );
 var dest = document.getElementById("markdown-dest");
 
+var theme = document.getElementById("mermaid-theme");
+
+function updateTheme(event) {
+  console.log(event);
+  md = new MarkdownIt().use(plugin, {theme: event.target.value});
+  render();
+}
+
 function render() {
   const rendered = md.render(source.getValue());
   dest.innerHTML = rendered;
 }
 
+// event listeners
+theme.addEventListener("input", updateTheme);
 source.on("change", render);
 
 render();

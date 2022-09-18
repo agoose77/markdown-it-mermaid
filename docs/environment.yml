@@ -11,3 +11,4 @@ dependencies:
   - pydata-sphinx-theme >=0.10.0,<0.11
   - python >=3.10,<3.11
   - sphinx >=5
+  - sphinx-copybutton
