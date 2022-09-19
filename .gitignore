@@ -1,4 +1,7 @@
-node_modules
-/lib
 .idea
 *.tsbuildinfo
+/lib
+node_modules/
+www/dist/
+www/index.html
+build/

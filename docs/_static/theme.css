@@ -1,0 +1,27 @@
+/** demo **/
+#markdown-demo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  grid-gap: 1em;
+}
+#markdown-demo > * {
+  flex: 1;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+#markdown-demo textarea {
+  font-family: monospace;
+}
+
+/** theme overrides **/
+.bd-content {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+
+.bd-main .bd-content .bd-article-container {
+  width: 100%;
+  max-width: 100%;
+}
