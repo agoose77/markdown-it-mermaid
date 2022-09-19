@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - run: npm install
+      - run: npm run lint
+      - run: npm run build
+      - run: mkdir -p dist && cd dist && npm pack .. && sha256sum * | tee SHA256SUMS
+      - uses: actions/upload-artifact@v3
+        with:
+          name: markdown-it-mermaid dist ${{ github.run_number }}
+          path: ./dist

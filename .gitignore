@@ -1,7 +1,6 @@
 .idea
 *.tsbuildinfo
-/lib
-node_modules/
-www/dist/
-www/index.html
+lib/
 build/
+dist/
+node_modules/
