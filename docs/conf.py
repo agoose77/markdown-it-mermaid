@@ -33,8 +33,7 @@ extensions = [
     # first-party sphinx extensions
     "sphinx.ext.todo",
     "sphinx.ext.autosectionlabel",
-    # mostly for markdown
-    "myst_nb",
+    "myst_parser",
     "sphinx_copybutton",
 ]
 
