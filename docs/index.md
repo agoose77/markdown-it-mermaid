@@ -68,14 +68,24 @@ const result = md.render("```mermaid\ngraph TD;\n\tA-->B;```");
 ### Options
 
 When calling `MarkdownIt.use`, an optional second parameter is interpreted as the input
-to `Mermaid.initialize`:
+to [`Mermaid.initialize`][mermaid-configuration]:
 
-[mermaid configuration]: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
+[mermaid-configuration]: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
 
 ```js
 const md = new MarkdownIt().use(mermaidPlugin, { theme: "forest" });
 ```
 
 ```{include} ../CHANGELOG.md
+
+```
+
+```{include} ../CONTRIBUTING.md
+
+```
+
+## License
+
+```{include} ../LICENSE
 
 ```

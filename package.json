@@ -6,12 +6,13 @@
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
   "files": [
+    "LICENSE",
     "lib/**/*"
   ],
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:prettier",
-    "lint:prettier": "prettier --write --list-different \"**/*.{md,js,ts,json,yml}\""
+    "lint:prettier": "prettier --write --list-different \"**/*.{md,js,ts,json,yml,css}\""
   },
   "repository": {
     "type": "git",
